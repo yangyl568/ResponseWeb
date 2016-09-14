@@ -6,9 +6,9 @@
 		<!--使用viewport让布局视口成为理想视口-->
 		<meta name="viewport" content="width=device-width ,initial-scale=1" />
 		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/owl.carousel.min.css" />
+		<link rel="stylesheet" href="css/owl.theme.default.min.css" />
 		
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.carousel.min.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.theme.default.min.css" />
 		<link rel="stylesheet" href="css/main.css" />
 		<title>响应式页面</title>
 	</head>
@@ -243,8 +243,11 @@
 			<p>北京某互联网金融公司 版权所有 ® 2015-2016</p>
 		</footer>
 	</body>
+	
 	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js" ></script>
+	<script type="text/javascript" src="js/gotoTop.js" ></script>
+	
 	<script>
 		$(document).ready(function() {
 			$(".owl-carousel").owlCarousel({
@@ -254,6 +257,11 @@
 				autoplayTimeout: 3000,
 				autoplayHoverPause: true
 			});
+			//返回顶部
+			$(".backToTop").goToTop();
+		    $(window).bind('scroll resize',function(){ 
+		        $(".backToTop").goToTop(); 
+		    }); 
 		});
 	</script>
 

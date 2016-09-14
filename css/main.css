@@ -668,3 +668,9 @@ footer p{
 	padding: 1rem;
 	background: #ccc;
 }
+
+
+
+.backToTop{width:16px; background:#dff3fd url(top.gif) no-repeat 0px 5px; padding:20px 0 4px 
+4px; line-height:16px;-moz-border-radius:2px; -webkit-border-radius:2px; border-radius:2px;} 
+a.backToTop:hover{text-decoration:none; color:#f60} 
